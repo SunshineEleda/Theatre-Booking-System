@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoomStrom Theatre</title>
+	<meta charset="utf-8"/>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	 <link rel="stylesheet" type="text/css" href="Booking.css">
+     <script src="scripts/main.js"></script>
+</head>
+<body>
+
+<section class="jumbotron">
+    <div class="container">
+      <div class ="row text-center">
+        <h1>SoomStrom Theatre</h1>
+        <a class="btn btn-primary" href="index.html" role="button">Home</a>
+        <a class="btn btn-primary" href="schedule.php" role="button">Schedule</a>
+        <a class="btn btn-primary" href="managebookings.php" role="button">Manage Bookings</a>
+        <a class="btn btn-primary" href="adminPage.php" role="button">Admin Page</a>
+      </div>
+    </div>
+  </section>
+
+
+		
+<div class= "content">
+
+<form action="managebookings.php" method="GET">
+
+    Email Address:<br>
+  <input id="email" name="Email" type="text" Onchange = '
+     var email = this.value
+     var characters = ["@"]
+  if( !email.includes(characters) ) {
+    alert( "please enter a valid email address");
+    this.value=""; //clears the text box
+  }'><br>
+  <input name="submit" type="submit" value="Submit";> 
+
+  </form>
+
+</div>
+			
+ <div class="adelek">
+    <li> &copy; An original design by Adele Kufour </li>
+      </div>
+      
+</body>
+</html>
